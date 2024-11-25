@@ -12,7 +12,7 @@ import (
 
 func InitDB() {
 	// "user:pass@tcp(127.0.0.1:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
-	dsn := fmt.Sprintf("%v:%v@@tcp(%v%v)/%v?charset=utf8mb4&parseTime=True&loc=Local",
+	dsn := fmt.Sprintf("%v:%v@tcp(%v%v)/%v?charset=utf8mb4&parseTime=True&loc=Local",
 		AppConfig.Database.User,
 		AppConfig.Database.Password,
 		AppConfig.Database.Host,

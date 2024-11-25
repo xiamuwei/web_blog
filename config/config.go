@@ -44,4 +44,7 @@ func InitConfig() {
 	// 反序列化
 	AppConfig = &Config{}
 	yaml.Unmarshal(content, AppConfig)
+
+	// 初始化数据库
+	InitDB()
 }
